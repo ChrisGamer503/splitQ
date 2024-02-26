@@ -59,3 +59,8 @@ body {
     background-origin: padding-box, border-box;
     border-color: transparent;
 }
+
+.text-gradient{
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
