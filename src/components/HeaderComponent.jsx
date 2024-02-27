@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import {GiHamburgerMenu} from 'react-icons/gi';
-
-
+import {MdMenu} from "react-icons/md"
+import { Logo } from './Logo';
 
 function HeaderComponent() {
 
@@ -14,10 +13,10 @@ function HeaderComponent() {
   return (
     <div className='flex p-5 justify-between'>
         <div className='flex w-32'>
-        <img src="../../public/LOGO.png" alt="" />
+        <Logo />
         </div>
         <div className='flex'>
-          <GiHamburgerMenu className='flex size-7'/>   
+          <MdMenu className='flex size-7'/>   
         </div>
     </div>
     
