@@ -52,6 +52,10 @@ body {
     background-color: var(--background);
 }
 
+input{
+    background-color: transparent;
+}
+
 .border-gradient {
     background: linear-gradient(to right, var(--background), var(--background)),
     linear-gradient(var(--gradient-principal));
