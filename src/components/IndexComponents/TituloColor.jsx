@@ -18,7 +18,7 @@ function TituloColor({ texto }) {
     }
   }, [texto]);
 
-  return <div className="capitalize font-black text-center text-6xl sm:text-xl">{ultimaPalabra}</div>;
+  return <div className="capitalize font-black text-center md:text-6xl text-2xl">{ultimaPalabra}</div>;
 }
 
 export default TituloColor;
