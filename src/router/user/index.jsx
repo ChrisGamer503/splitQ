@@ -1,5 +1,4 @@
-/* import Login from "../../pages/Login";
-import Register from "../../pages/Register"; */
+import Login from "../../pages/UserPages/Login";
 import UserIndex from "../../pages/UserPages/UserIndex";
 
 const router = {
@@ -11,12 +10,12 @@ const router = {
             element: (
                 <UserIndex/>
             )
-        }/* ,
+        } ,
         {
             path: "login",
             element: <Login/>
         },
-        {
+        /*{
             path: "register",
             element: <Register/>
         } */

@@ -1,7 +1,7 @@
 import { useTheme } from "./theme-provider"
 
-export const Logo = () => {
+export const Logo = ({width = 128}) => {
     const {theme} = useTheme()
-    if(theme=='dark') return <img src="/logo_dark.svg" alt="" />
-    return <img src="/logo.svg" alt="" />
+    if(theme=='dark') return <img width={width} src="/logo_dark.svg" alt="" />
+    return <img width={width} src="/logo.svg" alt="" />
 }
