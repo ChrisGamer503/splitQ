@@ -4,21 +4,31 @@ const Register = () => {
     return (
         <>
             <FormLayout>
-                <h1 className='font-bold text-2xl justify-center'>Crear Cuenta</h1>
-                <p>Accede a nuestra plataforma</p>
+                <div className='mx-auto my-auto mb-5'>
+                    <h1 className='font-bold text-2xl ml-10'>Crear Cuenta</h1>
+                    <p className='text-gray-400'>Crea una nueva cuenta en SplitQ</p>
+                </div>
+
                 <label>Nombre</label>
-                <input placeholder='Nombre' />
+                <Inpvts placeholder={"Nombre"} type={"text"}/>
                 <label>Apellido</label>
-                <input placeholder='Apellidos' />
+                <Inpvts placeholder={"Apellido"} type={"text"}/>
                 <label>Email</label>
-                <input placeholder='Email' />
+                <Inpvts placeholder={"Email"} type={"email"}/>
                 <label>Contraseña</label>
-                <input placeholder='Contraseña' />
-                <p>Olvidaste tu contraseña?</p>
-                <button>Crear Cuenta</button>
+                <Inpvts placeholder={"Contraseña"} type={"Password"}/>
+                <button className='border border-gray-200 p-2 mt-5 rounded-md text-white bg-black'>Crear Cuenta</button>
             </FormLayout>
+
         </>
+        
     )
+    function Inpvts({placeholder, type}){
+
+        return(<input placeholder={placeholder} type={type} className='border border-gray-200 p-2 mb-2 mt-1 rounded-md'/>);
+
+
+    }
 }
 
 export default Register
