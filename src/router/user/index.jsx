@@ -1,5 +1,6 @@
 import Login from "../../pages/UserPages/Login";
 import UserIndex from "../../pages/UserPages/UserIndex";
+import Register from "../../pages/UserPages/Register";
 import VerificarCuenta from "../../pages/UserPages/VerificarCuenta";
 
 const router = {
@@ -16,10 +17,10 @@ const router = {
             path: "login",
             element: <Login/>
         },
-        /*{
+        {
             path: "register",
             element: <Register/>
-        } */
+        } ,
         
         {
             path: "verificarCuenta",
