@@ -1,6 +1,7 @@
 import Login from "../../pages/UserPages/Login";
 import UserIndex from "../../pages/UserPages/UserIndex";
 import Register from "../../pages/UserPages/Register";
+import VerificarCuenta from "../../pages/UserPages/VerificarCuenta";
 
 const router = {
     caseSensitive: true,
@@ -19,7 +20,12 @@ const router = {
         {
             path: "register",
             element: <Register/>
-        } 
+        } ,
+        
+        {
+            path: "verificarCuenta",
+            element: <VerificarCuenta />
+        },
         
     ]
 }
